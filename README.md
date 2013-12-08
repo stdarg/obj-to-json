@@ -1,17 +1,18 @@
 obj-to-json
 ===========
 
-Methods to copy objects and convert JSON to obj and vice-versa in Node.js without throwing.
+Methods to copy objects and convert JSON to obj and vice-versa in Node.js
+without throwing.
 
 Why?
 
-I don't like exceptions. This module wraps the JSON.stringify and
-JSON.parse, with a try/catch that makes exceptions become a return value
-of `false` on exceptions. This module is nice if you don't want to
-directly deal with exceptions and awful if you do.
+I don't like exceptions. This module wraps the JSON.stringify and JSON.parse,
+with a try/catch that makes exceptions become a return value of `false` on
+errors. This module is nice if you don't want to deal with exceptions and awful
+if you do.
 
 The copyObj function does JSON.parse(JSON.stringify()) and won't work with
-objects properties lacking JSON representations and objects having circular
+objects properties lacking JSON representations or objects having circular
 references.
 
 ## Installation
@@ -62,7 +63,7 @@ references.
     console.log('success.');
 
 ## API
-### copyObj(val, [delProps])
+### copyObj(val [, delProps])
 A convenience function to copy an object. Must be an object that can be
 serialized into JSON.
 
@@ -79,7 +80,7 @@ A convenience function to convert a JSON string to an object.
 * **String** *str* A stringified JSON representation.
 * **Function** *[reviver]* Optional function to transform the JSON should have the form: function(key, value)
 #### Return:
-* **Object|Boolean** returns the object representation of the JSON, if the str representation is is legal and false otherwise.
+* **Object|Boolean** returns the object representation of the JSON, if the string representation is legal and false otherwise.
 
 ### jsonStringify(val, [replacer], [space])
 A convenience function to convert an object to a JSON string.

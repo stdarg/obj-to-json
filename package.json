@@ -1,6 +1,6 @@
 {
   "name": "obj-to-json",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Methods to copy objects and convert JSON to obj and vice-versa in Node.js without throwing.",
   "main": "index.js",
   "scripts": {
