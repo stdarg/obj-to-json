@@ -93,10 +93,9 @@ A convenience function to convert an object to a JSON string.
 * **String|Boolean** The JSON string if possible and false otherwise.
 
 ## License
-
 The MIT License (MIT)
 
-Copyright (c) 2013 Edmond Meinfelder
+Copyright (c) 201,2014 Edmond Meinfelder
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

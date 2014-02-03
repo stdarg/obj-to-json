@@ -1,6 +1,6 @@
 {
   "name": "obj-to-json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Methods to copy objects and convert JSON to obj and vice-versa in Node.js without throwing.",
   "main": "index.js",
   "scripts": {
@@ -22,10 +22,10 @@
     "url": "https://github.com/stdarg/obj-to-json/issues"
   },
   "dependencies" : { 
-    "debug": "~0.7.2",
-    "is2": "~0.0.5"
+    "debug": "0.7.4",
+    "is2": "0.0.12"
   },
   "devDependencies" : {
-   "mocha" : "1.8.1"
+   "mocha" : "1.17.1"
   }
 }
